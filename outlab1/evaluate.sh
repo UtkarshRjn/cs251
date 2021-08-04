@@ -12,9 +12,8 @@ do
 	let marks=0
 	for input in $(basename -a ../../mock_grading/inputs/*.in)
 	do
-		echo $input
 		g++ -o executable $roll.cpp 2>/dev/null 
-		timeout 5s ./executable < ../../mock_grading/inputs/$input > student_outputs/${input%.in}.out |:
+		timeout 5s ./executable < ../../mock_grading/inputs/$input > student_outputs/${input%.in}.out 2>/dev/null |:
 	
 		if diff student_outputs/${input%.in}.out ../../mock_grading/outputs/${input%.in}.out > /dev/null
 		then

@@ -13,3 +13,4 @@ do
 	done
 	cd ..
 done
+cd ..
