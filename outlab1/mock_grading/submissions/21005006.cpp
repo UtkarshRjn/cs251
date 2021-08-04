@@ -1,0 +1,11 @@
+#include "21005001.h"
+#include<iostream>
+
+int main(){
+    string name, password;
+    cin >> name;
+    cin > password;
+
+    if(login(name, password)) cout << "Success!\n";
+    cout << "Fail!\n";
+}
