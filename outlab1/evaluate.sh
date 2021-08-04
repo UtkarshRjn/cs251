@@ -28,5 +28,5 @@ do
 done
 cd ..
 
-sort -r distribution.txt
-sort marksheet.csv
+sort -rno distribution.txt distribution.txt
+sort -o marksheet.csv marksheet.csv
