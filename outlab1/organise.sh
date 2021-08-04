@@ -7,6 +7,9 @@ for roll in $( cut -d "" -f 2 '../mock_grading/roll_list' )
 do
 	mkdir $roll
 	cd $roll
-	ln -sF "../../mock_grading/submissions/$( cd ../../;basename -a $(find . -type f -path "../../mock_grading/submissions/$roll*" ))" $(cd ../../;basename -a $(find . -type f -path "../../mock_grading/submissions/$roll*" ))
+	for file in $( cd ../../;basename -a $(find . -type f -name "$roll*"))
+	do
+		ln -sF ../../mock_grading/submissions/$file $file
+	done
 	cd ..
 done
