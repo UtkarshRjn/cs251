@@ -1,4 +1,5 @@
 import numpy as np
+import argparse
 
 parser = argparse.ArgumentParser(description='Prints mean, median, std deviation, determinant and inverse')
 parser.add_argument('-p','--path', required=True, help='Relatve path to the csv file')

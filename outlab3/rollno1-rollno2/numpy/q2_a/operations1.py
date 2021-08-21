@@ -1,4 +1,5 @@
 import numpy as np
+import argparse
 
 parser = argparse.ArgumentParser(description='Prints elements belonging to the upper diagonals')
 parser.add_argument('-p','--path', required=True, help='Relatve path to the csv file')
@@ -13,9 +14,9 @@ rows, cols = mat.shape
 for i in range(0,rows):
     for j in range(0,cols):
         if(j>i): 
-            print("\n")
+            print()
             break
         else: print(mat[j,i], end = " ")
-print("\n")
+print()
 
 

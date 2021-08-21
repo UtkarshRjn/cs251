@@ -1,4 +1,5 @@
 import numpy as np
+import argparse
 
 parser = argparse.ArgumentParser(description='Sorts and flattens array')
 parser.add_argument('-p','--path', required=True, help='Relatve path to the csv file')
