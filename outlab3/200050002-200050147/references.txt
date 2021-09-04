@@ -1,0 +1,13 @@
+https://www.geeksforgeeks.org/numpy-std-in-python/
+
+https://www.geeksforgeeks.org/numpy-pad-function-in-python/
+
+https://medium.com/analytics-vidhya/understanding-principle-component-analysis-pca-step-by-step-e7a4bb4031d9
+
+https://numpy.org/doc/stable/reference/generated/numpy.linalg.eig.html
+
+https://stackoverflow.com/questions/20145842/python-sorting-by-multiple-criteria
+
+https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.tplquad.html
+
+
