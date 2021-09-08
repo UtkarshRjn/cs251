@@ -1,8 +1,0 @@
-https://programminghead.com/how-to-link-submit-button-to-another-page-in-html.php
-https://stackoverflow.com/questions/2906582/how-to-create-an-html-button-that-acts-like-a-link
-https://www.plus2net.com/html_tutorial/button-linking.php
-
-
-https://stackoverflow.com/questions/5870537/whats-the-difference-between-django-onetoonefield-and-foreignkey
-https://stackoverflow.com/questions/44109/extending-the-user-model-with-custom-fields-in-django
-https://stackoverflow.com/questions/60949493/how-to-save-data-from-the-user-form-that-is-implemented-by-built-in-auth-user-u
