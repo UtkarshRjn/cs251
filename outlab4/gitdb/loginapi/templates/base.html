@@ -1,0 +1,51 @@
+<!-- templates/base.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{% block title %}Django Auth Tutorial{% endblock %}</title>
+  
+  <style>
+  header {
+    background-color: #F8F9FA;
+    padding: 60px;
+    text-align: center;
+    font-size: 50px;
+    color: black;
+  }
+  button {
+    background-color: #0E6EFD; 
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 6px;
+  }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+    <p style="color: red; font-size: 20px;">Built by 200050002 200050147</p>
+    Welcome to GitHub Profiles!
+    <div class="dashboard">
+        <div class="btn-group">
+            {% if user.is_authenticated %}
+                <button onclick=location.href="{% url 'explore' %}" class="btn btn-primary">Explore</button>
+                <button onclick=location.href="{% url 'profile' %}" class="btn btn-primary">My Profile</button>
+                <button onclick=location.href="{% url 'logout' %}" class="btn btn-primary">Logout</button>
+            {% else %}
+                <button onclick=location.href="{% url 'signup' %}" class="btn btn-primary">Singup</button>
+                <button onclick=location.href="{% url 'login' %}" class="btn btn-primary">Login</button>
+            {% endif %}
+        </div>
+    </div>
+    </header>
+    {% block content %}
+    {% endblock %}
+  </main>
+</body>
+</html>

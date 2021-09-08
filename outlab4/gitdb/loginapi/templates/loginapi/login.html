@@ -1,0 +1,13 @@
+<!-- templates/login.html -->
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <p style="font-size: 50px;">Login to Github profile</p>
+    <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Login</button>
+    </form>
+{% endblock %}

@@ -1,0 +1,16 @@
+<!-- templates/registration/profile.html -->
+{% extends 'base.html' %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+<title>Profile</title>
+{% endblock %}
+
+{% block body %}
+
+    {{ user }}
+    {{ user.first_name }}
+    {{ user.last_name }}
+
+{% endblock %}

@@ -1,0 +1,12 @@
+<!-- templates/home.html -->
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <ul>
+        {% for profile in profiles %}
+            <li>{{ profile.user.username }} </li>
+        {% endfor %}    
+    </ul>
+{% endblock %}
