@@ -9,8 +9,8 @@
     {{ this_user.profile.followers }} followers <br>
     Profile last updated: {{ this_user.profile.timing }} 
     
-    {%if {{ user.username }} is {{ this_user.username }} %}
-        <a href="/profile/{{ user.id }}">Update Now</a>
+    {%if user.username == this_user.username %}
+        <a style="color: #0E6EFD" href="/profile/{{ user.id }}">(Update Now)</a>
     {% endif %}
     
     <br>
