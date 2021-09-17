@@ -10,7 +10,7 @@
     Profile last updated: {{ this_user.profile.timing }} 
     
     {%if user.username == this_user.username %}
-        <a style="color: #0E6EFD" href="/profile/{{ user.id }}">(Update Now)</a>
+        <a href="/profile/{{ user.id }}">(Update Now)</a>
     {% endif %}
     
     <br>

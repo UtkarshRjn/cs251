@@ -1,51 +1,43 @@
 <!-- templates/base.html -->
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- Required meta tags -->
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="{% static 'loginapi/main.css' %}">
+
   <title>{% block title %}Django Auth Tutorial{% endblock %}</title>
-  
-  <style>
-  header {
-    background-color: #F8F9FA;
-    padding: 60px;
-    text-align: center;
-    font-size: 50px;
-    color: black;
-  }
-  button {
-    background-color: #0E6EFD; 
-    border: none;
-    color: white;
-    padding: 10px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 30px;
-    border-radius: 6px;
-  }
-  </style>
 </head>
 <body>
   <main>
     <header>
-    <p style="color: red; font-size: 20px;">Built by 200050002 200050147</p>
+    <p class="roll" >Built by 200050002 200050147</p>
     Welcome to GitHub Profiles!
-    <div class="dashboard">
-        <div class="btn-group">
-            {% if user.is_authenticated %}
-                <button onclick=location.href="{% url 'explore' %}" class="btn btn-primary">Explore</button>
-                <button onclick=location.href="/profile/{{ user.id }}" class="btn btn-primary">My Profile</button>
-                <button onclick=location.href="{% url 'logout' %}?next=/accounts/login" class="btn btn-primary">Logout</button>
-            {% else %}
-                <button onclick=location.href="{% url 'signup' %}" class="btn btn-primary">Singup</button>
-                <button onclick=location.href="{% url 'login' %}" class="btn btn-primary">Login</button>
-            {% endif %}
-        </div>
+    <div class="container-sm">
+        {% if user.is_authenticated %}
+            <button type="button" onclick=location.href="{% url 'explore' %}" class="btn btn-primary btn-lg">Explore</button>
+            <button type="button" onclick=location.href="/profile/{{ user.id }}" class="btn btn-primary btn-lg">My Profile</button>
+            <button type="button" onclick=location.href="{% url 'logout' %}?next=/accounts/login" class="btn btn-primary btn-lg">Logout</button>
+        {% else %}
+            <button type="button" onclick=location.href="{% url 'signup' %}" class="btn btn-primary btn-lg">Singup</button>
+            <button type="button" onclick=location.href="{% url 'login' %}" class="btn btn-primary btn-lg">Login</button>
+        {% endif %}
     </div>
     </header>
-    {% block content %}
-    {% endblock %}
+    <div class="container">
+      {% block content %}
+      {% endblock %}
+    </div>>
   </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+ 
 </body>
 </html>

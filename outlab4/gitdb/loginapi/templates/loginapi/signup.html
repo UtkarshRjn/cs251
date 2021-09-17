@@ -4,10 +4,10 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
-    <p style="font-size: 50px;">Singup with Github Profile</p>
+    <p class="heading" >Singup with Github Profile</p>
     <form method="post">
     {% csrf_token %}
     {{ form.as_p }}
-    <button type="submit">Sign Up</button>
+    <button type="submit" class="btn btn-primary">Sign Up</button>
     </form>
 {% endblock %}

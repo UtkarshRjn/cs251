@@ -1,0 +1,44 @@
+  header {
+    background-color: #F8F9FA;
+    padding: 60px;
+    text-align: center;
+    font-size: 50px;
+    color: black;
+  }
+  button.primary {
+    background-color: #0E6EFD; 
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    border-radius: 6px;
+  }
+
+  a{
+    color: #0E6EFD"
+  }
+
+  button.listing {
+    font-size: 30px; 
+    background-color: white;
+    color: #0E6EFD; 
+    border: 2px solid #0E6EFD;
+    padding: 10px 15px;
+    border-radius: 10px;
+  }
+
+  p.roll {
+    color: red; 
+    font-size: 20px;
+  }
+
+  ul.a {
+    list-style-type: square;
+  }
+
+  p.heading {
+    font-size: 50px;
+  }

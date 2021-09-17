@@ -4,10 +4,10 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
-    <ul>
+    <ul class="a">
         {% for profile in profiles %}
-            <li> <button style="font-size: 30px; background-color: white; color: #0E6EFD; border: 2px solid #0E6EFD;" onclick=location.href="/profile/{{ profile.user.id }}">{{ profile.user.username }} </button></li>
-            <br><br>
+            <li> <button type="button" class="btn btn-outline-primary" onclick=location.href="/profile/{{ profile.user.id }}">{{ profile.user.username }} </button></li>
+            <br>
         {% endfor %}    
-    </ul>
+    </ul class="a">
 {% endblock %}
