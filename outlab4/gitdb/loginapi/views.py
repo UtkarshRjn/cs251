@@ -46,5 +46,7 @@ def fetch(name):
 		repo.save()
 
 @login_required
-def profile(request):
-	return render(request, 'profile.html')
+def profile(request, user_id):
+	user = User.objects.get(id=user_id)
+	repos = Respository.objects.filter(profile_id = user.id)
+	return render(request, 'profile.html', {'this_user': user, 'repos': repos})

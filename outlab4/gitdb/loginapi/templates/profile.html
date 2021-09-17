@@ -1,9 +1,15 @@
-<!-- templates/home.html -->
+<!-- templates/profile.html -->
 {% extends 'base.html' %}
 
 {% block title %}Home{% endblock %}
 
 {% block content %}
-    Hi !! {{ user.username }}
-    You have {{ user.profile.followers }} followers!!!
+    <h1> {{ this_user.first_name }} {{ this_user.last_name }} (@ {{ this_user.username }} ) </h1>
+    {{ this_user.profile.followers }} followers <br>
+    Profile last updated: {{ this_user.profile.timing }}<br>
+    <ul>
+        {% for repo in repos %}
+            <li> repo </li>
+        {% endfor %}    
+    </ul>
 {% endblock %}
