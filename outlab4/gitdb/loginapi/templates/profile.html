@@ -5,11 +5,18 @@
 
 {% block content %}
     <h1> {{ this_user.first_name }} {{ this_user.last_name }} (@ {{ this_user.username }} ) </h1>
+    
     {{ this_user.profile.followers }} followers <br>
-    Profile last updated: {{ this_user.profile.timing }}<br>
+    Profile last updated: {{ this_user.profile.timing }} 
+    
+    {%if {{ user.username }} is {{ this_user.username }} %}
+        <a href="/profile/{{ user.id }}">Update Now</a>
+    {% endif %}
+    
+    <br>
     <ul>
         {% for repo in repos %}
-            <li> repo </li>
+            <li> {{ repo }} - {{ repo.stars }} stars </li>
         {% endfor %}    
     </ul>
 {% endblock %}

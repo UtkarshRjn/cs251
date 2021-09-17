@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'gitdb.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'my_database',
+        'NAME': 'git_database',
         'USER': 'utkarsh',
         'PASSWORD': 'Utkarsh@2002',
         'HOST': 'localhost',
