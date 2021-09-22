@@ -1,0 +1,13 @@
+<!-- templates/explore.html -->
+{% extends 'base.html' %}
+
+{% block title %}Explore{% endblock %}
+
+{% block content %}
+    <ul class="a">
+        {% for profile in profiles %}
+            <li> <button type="button" class="btn btn-outline-primary" onclick=location.href="/profile/{{ profile.user.id }}">{{ profile.user.username }} </button></li>
+            <br>
+        {% endfor %}    
+    </ul class="a">
+{% endblock %}
