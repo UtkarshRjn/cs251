@@ -1,0 +1,7 @@
+https://stackoverflow.com/questions/8009664/how-to-split-a-delimited-string-into-an-array-in-awk
+
+https://stackoverflow.com/questions/16017110/awk-script-to-process-one-file-and-read-another
+
+https://unix.stackexchange.com/questions/424869/sort-data-in-order-based-on-values-in-one-columns-conditional-upon-another-colum
+
+https://unix.stackexchange.com/questions/78925/how-to-sort-by-multiple-columns
