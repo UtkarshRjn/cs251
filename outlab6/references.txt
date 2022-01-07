@@ -1,0 +1,10 @@
+Q2:
+	https://stackoverflow.com/questions/5911174/finding-key-associated-with-max-value-in-a-java-map
+	https://codingbat.com/doc/java-map-introduction.html
+	https://www.guru99.com/java-string-tolowercase-methods.html
+	https://www.programiz.com/java-programming/examples/alphabet
+	https://www.codegrepper.com/code-examples/java/how+to+get+key+in+max+value+object+java+hashmap
+
+
+Q3:
+	https://stackoverflow.com/questions/6020384/create-array-of-regex-matches
